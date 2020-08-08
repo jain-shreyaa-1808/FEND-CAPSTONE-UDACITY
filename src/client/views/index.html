@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Weather Journal</title>
+<!-- <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet"> -->
+<!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+ <body>
+<div id = "app">
+  <div class ="holder headline card">
+    Weather Journal Info
+  </div>
+    <section class="trip_data">
+        <h1 class="welcome">Travel App</h1>
+        <form class="trip_data_form" onsubmit="return Client.handleSearch(event)">
+            <input class="trip_data_input input_search" type="search" id="place" placeholder="Place to Explore" required>
+            <label>Tour date
+                <input class="trip_data_input input_date" type="date" id="start_date">
+                <input class="trip_data_input input_date" type="date" id="end_date">
+
+            </label>
+            <input class="trip_data_input input_submit" type="submit" value="Search">
+        </form>
+    </section>
+    <section class="slip card">
+      <div id="tour_info" class="trips">
+        <!-- <img id="travel_img" src="./images/travel.jpeg"> -->
+        <!-- <p> -->
+            <h1>Travel Slip</h1>
+            <div class='place'>City:</div>
+            <div class='country'>Country:</div>
+            <div class='lat'>Latitude:</div>
+            <div class='lng'>Longitude:</div>
+            <img class='weatherImg' src="https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712__340.jpg">
+
+            <!-- <h2><span class="place"></span>, <span class="country"></span></h2>
+            <b>Travel Date: </b><span id="start_date"></span>
+        </p>
+        <p>Trip to <span class="place">NewYork</span>, <span class="country">USA</span> <span id="amount_of_days"></span></p>
+        <p><b>Weather: </b><span id="maxTemp"></span><span id="minTemp"></span> <span id="weather"></span></p> -->
+        <!-- <input id="modal_button" type="button" value="OK"> -->
+    </div>
+    </section>
+
+  <!-- <div class="col-12" id="btn-container">
+    <button class="btn btn-primary" type="button" id="form-submit" >Submit</button>
+  </div>
+</div>
+</div>
+
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLongTitle">Your trip to <span id="modal-city"></span>, <span
+          id="modal-country"></span></h5>
+
+    </div>
+    <div class="modal-body">
+      <img src="" id="modal-img">
+      <p>The temperature at the destination is: <span id="modal-temp"></span>&#x2103;</p>
+      <p>The weather at the destination is: <span id="modal-weather"></span></p>
+      <p>The population of the destination is: <span id="modal-population"></span></p>
+      <p>The time remaining in the start of trip is: <span id="modal-timeRemaining"></span></p>
+      <p>The length of the trip is: <span id="modal-tripLength"></span></p>
+    </div>
+  </div>
+</div>
+</div>
+
+  <script src="../../../dist/main.js" type="text/javascript"></script> -->
+<script> 
+
+  // Check that service workers are supported
+  if ('serviceWorker' in navigator) {
+    // Use the window load event to keep the page load performant
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js');
+    });
+  }
+</script>
+
+</body>
+</html>
