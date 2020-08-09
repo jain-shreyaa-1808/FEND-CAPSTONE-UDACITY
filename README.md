@@ -1,4 +1,4 @@
-##Travel application
+## Travel application
 *This project helps to explore:
 
 --Setting up webpacks
@@ -8,7 +8,7 @@
 
 
 
-##Getting started 
+## Getting started 
 Perform following operation
 
 *Install the npm package to get started*
@@ -46,7 +46,7 @@ npm start
 ```
 The server starts running on the localhost. 
 
-##Acknowledgment
+## Acknowledgment
 Starter code from www.udacity.com
 WeatherBit
 Pixabay 
