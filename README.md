@@ -26,20 +26,24 @@ The service workers have been used in the project to run the code even if the se
 
 *Run in production mode to see the functionality*
 
-``` npm run build-prod
-    npm start
-    ```
+``` 
+npm run build-prod
+npm start
+```
 
 *Running the code in development mode*
+
 ```
 npm run build-dev
 ```
 *Running the code in production mode*
+
 ```
 npm run build-prod
 ```
 Before starting the server a ``` .env ``` file has to be created to store the api keys
 Install the dotenv
+
 ```npm install dotenv```
 
 The .env file contains 
