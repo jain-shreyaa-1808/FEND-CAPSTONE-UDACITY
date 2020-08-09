@@ -1,5 +1,5 @@
 ## Travel application
-*This project helps to explore:
+*This project helps to explore:*
 
 --Setting up webpacks
 --Using api to fetch data
@@ -13,7 +13,7 @@ Perform following operation
 
 *Install the npm package to get started*
 ```
-npm install i
+npm install
 ```
 The above command installs all the webpack needed to run the project
 
@@ -49,5 +49,7 @@ The server starts running on the localhost.
 ## Acknowledgment
 Starter code from www.udacity.com
 WeatherBit
-Pixabay 
+
+Pixabay
+
 Geonames
