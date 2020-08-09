@@ -1,10 +1,13 @@
 ## Travel application
 *This project helps to explore:*
 
---Setting up webpacks
---Using api to fetch data
---Running the code in the development and production mode
---Editing the webpage and contents using Javascript
+-- Setting up webpacks
+
+-- Using api to fetch data
+
+-- Running the code in the development and production mode
+
+-- Editing the webpage and contents using Javascript
 
 
 
@@ -48,6 +51,7 @@ The server starts running on the localhost.
 
 ## Acknowledgment
 Starter code from www.udacity.com
+
 WeatherBit
 
 Pixabay
