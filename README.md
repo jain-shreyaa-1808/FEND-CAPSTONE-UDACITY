@@ -40,6 +40,7 @@ npm run build-dev
 
 ```
 npm run build-prod
+npm start
 ```
 Before starting the server a ``` .env ``` file has to be created to store the api keys
 Install the dotenv
