@@ -24,6 +24,12 @@ Babel loader has been installed in the project to convert the javascript code an
 
 The service workers have been used in the project to run the code even if the server is closed to load offline data
 
+*Run in production mode to see the functionality*
+
+``` npm run build-prod
+    npm start
+    ```
+
 *Running the code in development mode*
 ```
 npm run build-dev
