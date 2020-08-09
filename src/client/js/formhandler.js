@@ -3,7 +3,6 @@
 let baseURL="http://api.geonames.org/searchJSON?maxRows=1&q="
 let username="&username=jainshreya232"
 
-let key="17800591-520d277e752a1f3396bbade4b"
 
 const getData=async(baseURL,place,username)=>{
   const response= await fetch(baseURL+place+username);
@@ -21,8 +20,7 @@ const getImage=async(url)=>{
   const response= await fetch(url);
   try{
     const res=response.json();
-    data.imageURL=url
-    console.log(url);
+    return(res)
   }catch(error){
     console.log("error",error);
   }
@@ -32,6 +30,8 @@ export const handleSearch=async(event)=>{
   event.preventDefault();
   // document.querySelector(".input_submit").innerHTML="Updated";
     const place=document.getElementById("place").value;
+    let key="17800591-520d277e752a1f3396bbade4b"
+
     // console.log(process.env.GEONAME_USER)
   getData(baseURL,place,username)
   .then(function(data){
@@ -39,10 +39,12 @@ export const handleSearch=async(event)=>{
     const endDate=document.getElementById("end_date").value;
     makePost('/addData',{place:place,startDate:startDate,endDate:endDate,countryName:data.geonames[0].countryName,lat:data.geonames[0].lat,lng:data.geonames[0].lng})
 
-    getImage(`https://pixabay.com/api/?key=${key}&q=${place}&image_type=photo&pretty=true`)
+    let image=getImage(`https://pixabay.com/api/?key=${key}&q=${place}&image_type=photo`)
     // postImage('/addData',{image:data.body})
-    updateUI({place:place,startDate:startDate,endDate:endDate,countryName:data.geonames[0].countryName,lat:data.geonames[0].lat,lng:data.geonames[0].lng,image:data.imageURL});
-
+    // var image=resp.hits[0].pageURL
+    console.log(image);
+    updateUI({place:place,startDate:startDate,endDate:endDate,countryName:data.geonames[0].countryName,lat:data.geonames[0].lat,lng:data.geonames[0].lng,image:image});
+    // console.log("Image",image.hits["webformatURL"])
   })
 }
 const makePost= async(url='',data={})=>{
